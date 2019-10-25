@@ -1,0 +1,19 @@
+$ git status
+On branch issue1
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   dev02.txt
+
+
+$ git commit -m "[add]refs #1 dev02.txt adding"
+[issue1 a5f1afe] [add]refs #1 dev02.txt adding
+ 1 file changed, 84 insertions(+)
+ create mode 100644 dev02.txt
+
+$ git commit --amend
+[issue1 e0882aa] [add]refs #1 dev02.txt adding
+ Date: Fri Oct 25 17:36:04 2019 +0900
+ 1 file changed, 84 insertions(+)
+ create mode 100644 dev02.txt
+

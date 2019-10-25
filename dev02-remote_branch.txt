@@ -1,0 +1,82 @@
+# https://qiita.com/gold-kou/items/7f6a3b46e2781b0dd4a0
+
+$ git remote get-url origin
+
+https://github.com/yesgogo7/master.git
+
+
+$ git remote
+origin
+origin1
+
+$ git remote -v
+origin  https://github.com/yesgogo7/master.git (fetch)
+origin  https://github.com/yesgogo7/master.git (push)
+origin1 https://github.com/yesgogo7/master.git (fetch)
+origin1 https://github.com/yesgogo7/master.git (push)
+
+
+$ git remote add speech2 https://github.com/yesgogo7/speech2text.git
+
+$ git remote
+origin
+origin1
+speech2
+
+$ git remote -v
+origin  https://github.com/yesgogo7/master.git (fetch)
+origin  https://github.com/yesgogo7/master.git (push)
+origin1 https://github.com/yesgogo7/master.git (fetch)
+origin1 https://github.com/yesgogo7/master.git (push)
+speech2 https://github.com/yesgogo7/speech2text.git (fetch)
+speech2 https://github.com/yesgogo7/speech2text.git (push)
+
+$ git remote
+origin
+origin1
+speech2
+
+$ git remote rm origin1
+
+$ git remote
+origin
+speech2
+
+
+
+
+$ git branch --all
+* develop
+  issue1
+  issue2
+  issue3
+  master
+  remotes/origin/develop
+  remotes/origin/master
+  remotes/origin1/master
+
+$ git branch -m issue2 pmr01
+
+$ git branch --all
+  develop
+* issue1
+  issue3
+  master
+  pmr01
+  remotes/origin/develop
+  remotes/origin/master
+  remotes/origin1/master
+
+$ git branch -d issue3
+Deleted branch issue3 (was add066b).
+
+
+
+$ git branch --all
+  develop
+* issue1
+  master
+  pmr01
+  remotes/origin/develop
+  remotes/origin/master
+  remotes/origin1/master
