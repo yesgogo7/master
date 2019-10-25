@@ -1,0 +1,29 @@
+$ git branch develop
+
+$ git checkout develop
+Switched to branch 'develop'
+
+$git check -b develope
+
+$ git branch
+* develop
+  issue1
+  issue2
+  issue3
+  master
+
+$ git push origin develop
+
+-----------------------------------
+
+$  git merge issue1
+$  git merge master
+
+
+$ git tag v0.1 -m "message tag1"
+
+$ git tag
+
+$ git push origin v0.1
+
+$  git checkout .
